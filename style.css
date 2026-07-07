@@ -569,5 +569,202 @@ ul{list-style:none;}
     }
 
 }
+/*==========================================
+            MOBILE MENU
+==========================================*/
 
+.menu-toggle{
+    display:none;
+    width:50px;
+    height:50px;
+    border:none;
+    background:transparent;
+    font-size:32px;
+    color:#092439;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.menu-toggle:hover{
+    color:#e7640c;
+}
+
+
+/*==========================================
+        TABLET
+==========================================*/
+
+@media (max-width:992px){
+
+    .header .container{
+        height:75px;
+    }
+
+    .navbar ul{
+        gap:25px;
+    }
+
+    .btn{
+        padding:12px 22px;
+        font-size:15px;
+    }
+
+}
+
+
+/*==========================================
+        MOBILE
+==========================================*/
+
+@media (max-width:768px){
+
+    .header{
+        position:fixed;
+        top:0;
+        right:0;
+        left:0;
+    }
+
+    .header .container{
+
+        height:75px;
+
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+
+    }
+
+    .logo{
+        font-size:22px;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .btn{
+        display:none;
+    }
+
+    .navbar{
+
+        position:absolute;
+
+        top:75px;
+        right:0;
+
+        width:100%;
+
+        background:#ffffff;
+
+        box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+        display:none;
+
+        animation:menu .35s ease;
+
+    }
+
+    .navbar.active{
+        display:block;
+    }
+
+    .navbar ul{
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:0;
+
+    }
+
+    .navbar li{
+
+        border-bottom:1px solid #ececec;
+
+    }
+
+    .navbar li:last-child{
+
+        border:none;
+
+    }
+
+    .navbar a{
+
+        display:block;
+
+        padding:18px;
+
+        text-align:center;
+
+        font-size:16px;
+
+        transition:.3s;
+
+    }
+
+    .navbar a:hover{
+
+        background:#f8f9fb;
+
+        color:#e7640c;
+
+    }
+
+    .hero{
+
+        padding-top:140px;
+
+    }
+
+}
+
+
+/*==========================================
+        SMALL MOBILE
+==========================================*/
+
+@media (max-width:480px){
+
+    .logo{
+
+        font-size:18px;
+
+    }
+
+    .menu-toggle{
+
+        font-size:28px;
+
+    }
+
+}
+
+
+/*==========================================
+        MENU ANIMATION
+==========================================*/
+
+@keyframes menu{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-15px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
 
