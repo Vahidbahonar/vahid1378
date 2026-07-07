@@ -40,11 +40,22 @@ const menuToggle = document.getElementById("menu-toggle");
 const navbar = document.getElementById("navbar");
 
 menuToggle.addEventListener("click", () => {
+
     navbar.classList.toggle("active");
 
-    if (navbar.classList.contains("active")) {
-        menuToggle.innerHTML = "✕";
-    } else {
-        menuToggle.innerHTML = "☰";
-    }
+    menuToggle.textContent =
+        navbar.classList.contains("active") ? "✕" : "☰";
+
+});
+
+document.querySelectorAll(".navbar a").forEach(link=>{
+
+    link.addEventListener("click",()=>{
+
+        navbar.classList.remove("active");
+
+        menuToggle.textContent="☰";
+
+    });
+
 });
