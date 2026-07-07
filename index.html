@@ -13,17 +13,18 @@
 
 <body>
 
-<!--================ HEADER =================-->
+    <!--================ HEADER =================-->
 
 <header class="header">
 
     <div class="container">
 
-        <a href="#" class="logo">
-            vahid akhlaghali
+        <a href="#hero" class="logo">
+            Vahid Akhlaghali
         </a>
 
-        <nav class="navbar">
+        <!-- منوی سایت -->
+        <nav class="navbar" id="navbar">
 
             <ul>
 
@@ -41,6 +42,15 @@
 
         </nav>
 
+        <!-- دکمه همبرگری -->
+        <button class="menu-toggle"
+                id="menu-toggle"
+                aria-label="باز کردن منو"
+                aria-expanded="false"
+                aria-controls="navbar">
+            ☰
+        </button>
+
         <a href="#portfolio" class="btn">
             مشاهده نمونه کارها
         </a>
@@ -48,7 +58,6 @@
     </div>
 
 </header>
-
 
 <!--================ HERO =================-->
 
@@ -60,19 +69,20 @@
 
             <span>پورتفولیو طراحی گرافیک</span>
 
-            <h1>
-                سلام 👋
-                <br>
-                من وحید اخلاق عالی هستم
-            </h1>
+         <h1>
+وحید اخلاق عالی
+<br>
+فعال در حوزه طراحی گرافیک
+</h1>
 
             <p>
 
-                طراح گرافیک متخصص در طراحی انواع اقلام چاپی
-                شامل کارت ویزیت، تراکت، لیبل، بنر، سربرگ،
-                پاکت، سرنسخه، فاکتور و سایر خدمات چاپ.
+    دانش‌آموخته کارشناسی مهندسی کامپیوتر (نرم‌افزار) با علاقه
+    و فعالیت تخصصی در حوزه طراحی گرافیک. در زمینه طراحی اقلام
+    چاپی، آماده‌سازی فایل‌های استاندارد چاپ و تولید خروجی
+    مناسب برای چاپ افست و دیجیتال فعالیت می‌کنم.
 
-            </p>
+</p>
 
             <div class="hero-buttons">
 
@@ -92,6 +102,106 @@
         <div class="hero-image">
 
             <img src="hero.png" alt="Portfolio">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="print-partnership section" id="print-partnership">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span>همکاری با چاپخانه‌ها</span>
+            <h2>خدمات تخصصی برای چاپخانه‌ها</h2>
+        </div>
+
+        <div class="partnership-grid">
+
+            <div class="partnership-card">
+                <h3>طراحی فایل چاپی</h3>
+                <p>
+                    طراحی کارت ویزیت، تراکت، لیبل، بنر،
+                    سربرگ، پاکت، فاکتور و سایر اقلام چاپی.
+                </p>
+            </div>
+
+            <div class="partnership-card">
+                <h3>آماده‌سازی فایل چاپ</h3>
+                <p>
+                    رعایت استانداردهای چاپ شامل
+                    Bleed، Safe Area، CMYK و خروجی PDF.
+                </p>
+            </div>
+
+            <div class="partnership-card">
+                <h3>اصلاح فایل مشتری</h3>
+                <p>
+                    اصلاح فونت، تصاویر، اندازه فایل
+                    و آماده‌سازی نهایی قبل از چاپ.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="print-standards section">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span>استانداردهای چاپ</span>
+            <h2>فایل‌های کاملاً آماده چاپ</h2>
+        </div>
+
+        <div class="standards-list">
+
+            <div class="standard-item">CMYK</div>
+
+            <div class="standard-item">Bleed</div>
+
+            <div class="standard-item">Safe Area</div>
+
+            <div class="standard-item">300 DPI</div>
+
+            <div class="standard-item">PDF Print</div>
+
+            <div class="standard-item">Outline Fonts</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="tools section">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span>مهارت‌ها</span>
+            <h2>نرم‌افزارهای تخصصی</h2>
+        </div>
+
+        <div class="tools-grid">
+
+            <div class="tool-item">⭐ Adobe Illustrator</div>
+
+            <div class="tool-item">⭐⭐⭐⭐ Adobe Photoshop</div>
+
+            <div class="tool-item">⭐ Adobe InDesign</div>
+
+            <div class="tool-item">⭐ CorelDRAW</div>
+
+            <div class="tool-item">⭐⭐⭐ آماده‌سازی فایل چاپ</div>
+
+            <div class="tool-item">⭐ صفحه‌آرایی</div>
 
         </div>
 
@@ -484,7 +594,8 @@
 
         <div class="section-title">
             <span>ارتباط با من</span>
-            <h2>آماده همکاری با شما هستم</h2>
+            <h2>آماده همکاری با چاپخانه‌ها </h2>
+             <h3>برای طراحی، اصلاح و آماده‌سازی فایل‌های چاپی می‌توانید مستقیم تماس بگیرید.</h3>
         </div>
 
         <div class="contact-box">
@@ -602,4 +713,9 @@
 </section>
 
 
+</footer>
+
 <script src="script.js"></script>
+
+</body>
+</html>
